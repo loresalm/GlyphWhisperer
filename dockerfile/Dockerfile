@@ -17,6 +17,9 @@ RUN curl -fsSL https://ollama.com/install.sh | sh
 
 # Install Python dependencies
 RUN pip install ufoLib2 fontmake fonttools
+RUN pip3 install requests
+RUN pip install scikit-image imageio svgwrite
+
 
 # Set the working directory
 WORKDIR /home
